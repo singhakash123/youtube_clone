@@ -52,46 +52,46 @@ project-root/
 │ └── logger.js # Winston or custom logger
 │ └── rateLimiter.js # Security middlewares (rate limit etc)
 
-    ├── models/                 # Mongoose schema definitions
-    │   └── user.model.js
-    │   └── todo.model.js
+├── models/ # Mongoose schema definitions
+│ └── user.model.js
+│ └── todo.model.js
 
-    ├── controllers/           # Request handlers / business logic
-    │   └── auth.controller.js
-    │   └── user.controller.js
+├── controllers/ # Request handlers / business logic
+│ └── auth.controller.js
+│ └── user.controller.js
 
-    ├── routes/                # All routes
-    │   └── auth.routes.js
-    │   └── user.routes.js
-    │   └── index.js           # Route aggregator
+├── routes/ # All routes
+│ └── auth.routes.js
+│ └── user.routes.js
+│ └── index.js # Route aggregator
 
-    ├── middlewares/          # Custom middlewares
-    │   └── auth.middleware.js
-    │   └── error.middleware.js
-    │   └── upload.middleware.js
-    │   └── authorizeRoles.js
+├── middlewares/ # Custom middlewares
+│ └── auth.middleware.js
+│ └── error.middleware.js
+│ └── upload.middleware.js
+│ └── authorizeRoles.js
 
-    ├── services/             # 💡 Business-level services (optional)
-    │   └── user.service.js    # Logic abstracted from controllers
+├── services/ # 💡 Business-level services (optional)
+│ └── user.service.js # Logic abstracted from controllers
 
-    ├── utils/                # Utility functions
-    │   └── ApiError.js
-    │   └── ApiResponse.js
-    │   └── asyncHandler.js
-    │   └── sendEmail.js
+├── utils/ # Utility functions
+│ └── ApiError.js
+│ └── ApiResponse.js
+│ └── asyncHandler.js
+│ └── sendEmail.js
 
-    ├── constants/            # Centralized enums / roles / messages
-    │   └── roles.js
-    │   └── messages.js
+├── constants/ # Centralized enums / roles / messages
+│ └── roles.js
+│ └── messages.js
 
-    ├── validators/           # 🛡 Joi or express-validator schemas
-    │   └── user.validator.js
-    │
-    ├── docs/                 # Swagger/OpenAPI docs if any
-    │   └── swagger.yaml
-    │
-    └── tests/                # Jest or supertest-based tests
-        └── auth.test.js
+├── validators/ # 🛡 Joi or express-validator schemas
+│ └── user.validator.js
+│
+├── docs/ # Swagger/OpenAPI docs if any
+│ └── swagger.yaml
+│
+└── tests/ # Jest or supertest-based tests
+└── auth.test.js
 
 ## ✅ Why this structure is better?
 
