@@ -49,9 +49,15 @@ app.use(morgan("dev"))
 
 
 // Routes : 
+import { router } from "./routes/index.js"
+// prefix for API
+app.use("/api/v1", router);
 
-
-
+/*
+🏆 Final API Endpoints
+POST    /api/v1/user/register → register user
+GET /api/v1/video/ → get all videos
+*/
 
 
 

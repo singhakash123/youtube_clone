@@ -4,14 +4,16 @@ import multer from "multer";
 // Configure disk storage for uploaded files
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, 'public/temp'); // Files will be saved in the 'uploads/' directory
+    cb(null, './public/temp'); // Files will be saved in the 'uploads/' directory
   },
   filename: function (req, file, cb) {
     cb(null, Date.now() + '-' + file.originalname); // Unique filename
   }
 });
 
-const upload = multer({ storage: storage });
+export const upload = multer({ 
+  storage 
+});
 
 
 /*
