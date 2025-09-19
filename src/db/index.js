@@ -20,3 +20,15 @@ export const db_connected = async () => {
 // In summary:
 // exit(0) or process.exit(0): The program or process completed successfully.
 // exit(1) or process.exit(1): The program or process terminated due to an error.
+/*
+⚡ Real-World Usage
+
+throw error
+Jab tu chaahta hai ki caller decide kare error ke baad kya karna hai
+Reusable functions (e.g. connectDb) → yaha throw karna better hai
+
+process.exit(1)
+Jab tu startup stage me ho aur error ka matlab hai app ko band karna hi hoga
+Production startup (DB connect fail, port bind fail, env missing)
+
+*/

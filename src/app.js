@@ -53,19 +53,21 @@ app.use(morgan("dev"))
 
 
 
+
+
 /*
 
 
-// how to setup routes from here : 
+how to setup routes from here : 
 import { router } from "./routes/index.js";
 
 
-// --------------------- ROUTES ---------------------
+ --------------------- ROUTES ---------------------
 app.use("/api/v1", router);
 
 
 
-/*
+
 🔥 Final Clean Endpoints:
 
 POST /api/v1/user/register
